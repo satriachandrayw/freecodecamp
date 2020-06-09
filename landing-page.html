@@ -1,0 +1,163 @@
+<head>
+    <style>
+    #header-img {
+        width: 30vw;
+        height: auto;
+    }
+
+    #nav-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+    </style>
+</head>
+
+
+<html>
+
+<main>
+    <header id="header">
+        <div class="logo">
+        <img id="header-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1200px-Coca-Cola_logo.svg.png"
+        alt="coca-cola logo"
+        />
+        </div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li> <a class="nav-link" href="#features">Features</a> </li>
+                <li> <a class="nav-link" href="#how-it-works">How it Works</a> </li>
+                <li> <a class="nav-link" href="#pricing">Pricing</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"></div>
+
+<section id="hero">
+    <h2>Ingin dibanjiri email banyak?</h2>
+    <form id="form" action="https://freecodecamp.com/email-submit">
+    <input
+    name="email"
+    id="email"
+    type="email"
+    placeholder="Masukkan email"
+    required />
+
+    <input id="submit" type="submit" value="Mulai" class="btn" />
+    </form>
+</section>
+
+<div class="container">
+    <section id="features">
+        <div class="grid">
+            <div class="icon"> <i class="fa fa-3x fa-fire"></i> </div>
+            <div class="desc">
+                <h2>Material sawit</h2>
+                <p>
+                    Bahan baku kami terbuat dari bahan-bahan pilihan.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="icon"> <i class="fa fa-3x fa-battery-full"></i> </div>
+            <div class="desc">
+                <h2>Hemat Energi</h2>
+                <p>
+                   Proses kerja kami memakai konsep green energy.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="icon"> <i class="fa fa-3x fa-truck"></i> </div>
+            <div class="desc">
+                <h2>Transportasi</h2>
+                <p>
+                    Pengiriman menggunakan kendaraan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube.com/watch?v=OWBOQYNBU_0"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+    </section>
+
+    <section id="pricing">
+        <div class="product" id="tenor">
+            <div class="level"> 
+                Tenor Trombon
+            </div>
+            <h2>Rp. 600.000</h2>
+            <ol>
+                <li>Fitur 1</li>
+                <li>Fitur 2</li>
+                <li>Fitur 3</li>
+            </ol>
+            <button class="btn">Pilih</button>
+        </div>
+
+        <div class="product" id="minor">
+            <div class="level"> 
+                Minor Trombon
+            </div>
+            <h2>Rp. 800.000</h2>
+            <ol>
+                <li>Fitur 1</li>
+                <li>Fitur 2</li>
+                <li>Fitur 3</li>
+            </ol>
+            <button class="btn">Pilih</button>
+        </div>
+
+        <div class="product" id="major">
+            <div class="level"> 
+                Major Trombon
+            </div>
+            <h2>Rp. 1.000.000</h2>
+            <ol>
+                <li>Fitur 1</li>
+                <li>Fitur 2</li>
+                <li>Fitur 3</li>
+            </ol>
+            <button class="btn">Pilih</button>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a> </li>
+            <li><a href="#">Career</a> </li>
+            <li><a href="#">Butuh kami>?</a> </li>
+        </ul>
+
+        <span>Copyright 2020</span>
+    </footer>
+</div>
+</main>
+
+</html>

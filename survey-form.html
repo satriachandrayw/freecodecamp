@@ -1,0 +1,138 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+<main id="main">
+    <header class="header">
+        <h1 id="title" class="text-center">
+            Satrpole survey form
+        </h1>
+        <p id="description" class="description text center">
+            Feedback dari anda membantu meningkatkan pelayanan kami
+        </p>
+
+    </header>
+
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Nama</label> 
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Tulis nama anda..."
+        required
+        />
+    </div>
+
+    <div class="form-group">
+        <label id="email-label" for="email">Email</label> 
+        <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Tulis Email anda..."
+        required
+        />
+    </div>
+
+    <div class="form-group">
+        <label id="number-label" for="number">Nomor</label> 
+        <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="99"
+        class="form-control"
+        placeholder="Tulis nomor anda..."
+        required
+        />
+    </div>
+
+    <div class="form-group">
+        <p>Kamu milih apa?</p>
+        <select id="dropdown" name="role" class="form-control" required> 
+        <option value="pengangguran">Pengangguran </option>
+        <option value="bekerja">Bekerja</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p>Kalau kamu jago, kamu milih apa?</p>
+        <label>
+            <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked>
+            Pastinya bos!
+        </label>
+
+        <label>
+            <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+            checked>
+            Kayaknya iya....
+        </label>
+    </div>
+
+    <div class="form-group">
+        <p>Dichecklist dong
+           <span class="clue">checklist semua!</span> 
+        </p>
+        <label>
+            <input
+          name="prefer"
+          value="iseng aja"
+          type="checkbox"
+          class="input-checkbox"/>
+          Iseng aja</label>
+
+          <label>
+            <input
+          name="prefer"
+          value="boleh bos"
+          type="checkbox"
+          class="input-checkbox"/>
+          Boleh bos</label>
+    </div>
+
+    <div class="form-group">
+        <p>Ada komentar?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Tulis komentar disini..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+              Submit
+          </button>
+      </div>
+    
+</form>
+
+
+</main>
+</html>
+
+
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
